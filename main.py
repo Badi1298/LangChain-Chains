@@ -4,6 +4,9 @@ from langchain.llms import OpenAI
 from langchain.chains import LLMChain
 
 import argparse
+from dotenv import load_dotenv
+
+load_dotenv()
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--language', default='python')
